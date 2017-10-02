@@ -5,9 +5,10 @@ services:
     ports:
     - "443:443"
     - "80:80"
+    links:
+      - backend
   backend:
     image: linoproject/web_apachephp_mysql
-    ports:
-      - "8080:80"
     volumes:
       - /<localpath>/test:/var/www/html/
+
