@@ -1,0 +1,13 @@
+version: "2"
+services:
+  ngnix_1:
+    build: .
+    ports:
+    - "443:443"
+    - "80:80"
+  backend:
+    image: linoproject/web_apachephp_mysql
+    ports:
+      - "8080:80"
+    volumes:
+      - /Users/jan/ownCloud/DockerImages/images/compose/ngnix-ssl-sym/test:/var/www/html/
