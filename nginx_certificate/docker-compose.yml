@@ -10,4 +10,4 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /Users/jan/ownCloud/DockerImages/images/compose/ngnix-ssl-sym/test:/var/www/html/
+      - /<localpath>/test:/var/www/html/
