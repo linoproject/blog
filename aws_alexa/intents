@@ -1,0 +1,21 @@
+{"intents": [
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },{
+      "intent": "GetStatus"
+    },{
+      "intent": "GetComputers"
+    },{
+     "intent": "GetComputerStatus",
+     "Slots":[{
+       "name":"Computers",
+       "type":"LIST_OF_COMPUTERS"
+     }]
+    } 
+]}
